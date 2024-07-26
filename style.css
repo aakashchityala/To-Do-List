@@ -19,10 +19,9 @@ body {
 }
 
 .container {
-    min-width: 400px;
     position: relative;
     padding: 0.6rem 0.9rem;
-    width: 34%;
+    width: 38%;
     height: fit-content;
     border: 1px solid black;
     border-radius: 10px;
@@ -109,6 +108,7 @@ ul {
 }
 
 ul li {
+    position: relative;
     padding: 0 0.5em;
     word-wrap: break-word;
     cursor: pointer;
@@ -128,6 +128,7 @@ ul li::before {
 }
 
 .cut {
+    height: 100%;
     margin-left: 0.4rem;
     margin-right: 1rem;
     padding: 0;
@@ -153,7 +154,17 @@ ul li::before {
     background-color: #FF653B;
 }
 
+@media (max-width: 800px) {
+    .container {
+        width: 65%;
+    }
+}
 
+@media (max-width: 411px) {
+    .container{
+        width: 85%;
+    }
+}
 
 
 
